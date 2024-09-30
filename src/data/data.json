@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "ID": 1994335,
+            "CreatedAt": "2024-09-16T13:28:47.764306Z",
+            "UpdatedAt": "2024-09-16T13:56:32.891121Z",
+            "DeletedAt": null,
+            "Title": "SOP_Pengelolaan_Surat_Dinas",
+            "Body": [
+                "TITLE:SOP_Pengelolaan_Surat_Dinas",
+                "Berikut adalah angkah-langkah untuk mengurus surat dinas di lingkungan direktorat operasi Sumber Daya, DITJEN SDPPI:",
+                "STEP 1: Surat dari pihak eksternal yang diterima melalui media elektronik (WA, Email, Pos) harus diproses oleh Tim Persuratan DITOPS. Proses ini memakan waktu sekitar 10 menit.",
+                "STEP 2: File surat kemudian di input oleh Tim Persuratan DITOPS ke aplikasi Simaya. Proses ini memakan waktu sekitar 20 menit.",
+                "STEP 3: Direktur melakukan disposisi file surat di Simaya ke tim kerja terkait. Proses ini memakan waktu sekitar 10 menit.",
+                "STEP 4: Surat diterima ketua tim kerja. Surat diperiksa validator lalu diberi ke PIC Arsip pada Tim Persuratan DITOPS untuk diarsipkan. Untuk surat yang perlu tindak lanjut seperti surat dari Waba atau Client, nota dinas, dan undangan perlu diteruskan oleh ketua tim kerja kepada tim konseptor. Proses ini memakan waktu sekitar 10 menit.",
+                "STEP 5: Konseptor kemudian menyusun draft dan meminta nomor surat di database. Untuk ini konseptor perlu mengupload file dalam bentuk .doc atau .docx ke database gdrive persuratan. Proses ini memakan waktu sekitar 1 jam.",
+                "STEP 6: Tim persuratan DITOPS memproses surat dan meminta paraf validator yang terdiri dari Ketua dan/atau wakil ketua tim kerja Proses ini memakan waktu sekitar 30 menit.",
+                "STEP 7: Validator memeriksa surat yang diberikan. Jika ada revisi surat dikembalikan untuk diproses oleh Tim Persuratan DITOPS, jika tidak validator akan memberikan paraf. Proses ini memakan waktu sekitar 30 menit.",
+                "STEP 8: Tim Surat DITOPS mengupload surat pada database persuratan dan melakukan pengecekan tata naskah. Jika tidak sesuai maka, surat akan kembali diproses dan meminta ulang paraf validator. Jika sudah sesuai surat diupload ke database Google Drive persuratan. Proses ini memakan waktu sekitar 10 menit.",
+                "STEP 9: Direktur mengecek surat yang sudah diupload ke Google Drive persuratan. Jika ada revisi surat akan dikembalikan pada Tim Persuratan DITOPS. Jika tidak ada revisi maka direktur memberi tanda tangan. Proses ini memakan waktu sekitar 30 menit.",
+                "STEP 10: Surat yang sudah di tandatangan direktur diproses PIC Surat via Simaya, WA, email, dan/atau Pos filenya dikembalikan ke masing-masing konseptor untuk dibagikan ke validator dan Ketua Tim Kerja. Proses ini memakan waktu sekitar 30 menit.",
+                "STEP 11: Surat yang sudah beres diberikan pada Tim Persuratan untuk diarsipkan di Google Drive. Proses ini memakan waktu sekitar 10 menit."
+            ]
+        },
+        {
+            "ID": 3652238,
+            "CreatedAt": "2024-09-16T13:21:23.207771Z",
+            "UpdatedAt": "2024-09-16T14:03:34.823332Z",
+            "DeletedAt": null,
+            "Title": "SOP_Absen_Elektronik",
+            "Body": [
+                "TITLE:SOP_Absen_Elektronik",
+                "Berikut adalah angkah-langkah untuk mengurus absensi elektronik di lingkungan direktorat operasi Sumber Daya, DITJEN SDPPI:",
+                "STEP 1: Enroll sidik jari pada petugas absensi elektronik. Dibutuhkan SK Penempatan Pegawai. Proses ini memakan waktu sekitar 1 jam.",
+                "STEP 2: Pegawai yang hadir melakukan absensi elektronik, yang tidak hadir melakukan input bukti tidak hadir pada APIK SDPPI dengan syarat surat izin terlambat, surat tugas, undangan rapat, atau surat cuti. Dibutuhkan SK Penempatan Pegawai. Proses ini memakan waktu sekitar 30 menit.",
+                "STEP 3: Pegawai menerima dan membuat laporan absensi masing-masing. Pegawai wajib mengecek laporan absensi, jika tidak sesuai kembali ke langkah sebelumnya untuk melakukan input data. Proses ini memakan waktu sekitar 30 menit.",
+                "STEP 4: Melakukan validasi dan laporan absensi ke Kasubag Tata Usaha. Dibutuhkan laporan kehadiran final. Proses ini memakan waktu sekitar 2 jam.",
+                "STEP 5: Rekapitulasi kehadiran oleh petugas absensi elektronik. Dibutuhkan laporan rinci kehadiran pegawai. Proses ini memakan waktu sekitar 1 jam.",
+                "STEP 6: Kasubag Tata Usaha membuat laporan kehadiran untuk diserahkan ke Bagian Kepegawaian. Dibutuhkan validasi Kasubag Tata Usaha yang diketahui oleh Direktur Operasi Sumber Daya. Laporan rekapitulasi ditanda tangan direktur dan diserahkan kebagian kepegawaian. Proses ini memakan waktu sekitar 1 jam."
+            ]
+        }
+    ],
+    "success": true
+}
