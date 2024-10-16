@@ -16,38 +16,38 @@ function Login() {
     
     // Simulasi login berhasil
 
-    // if (email === 'admin@admin.com' && password === 'admin#1234') {
-    //   localStorage.setItem('isAuthenticated', 'true');
-    //   navigate('/dashboard'); // Redirect ke dashboard setelah login
-    // } else {
-    //   alert('Login failed!');
-    // }
-
-    try {
-      const response = await axios.post(
-        `${config.apiEndpoint}/login`,
-        {
-          Email: email,
-          Password: password
-        },
-        {
-          headers : {
-            "Content-Type": 'application/json'
-          }
-        }
-      );
-
-      if (response.status === 200) {
-        localStorage.setItem('isAuthenticated','true');
-        navigate('/dashboard');
-      }
-    } catch(error) {
-      if (error.response && error.response.status === 400){
-        setError('Login gagal. Cek email dan password');
-      } else {
-        setError('Terjadi kesalahan, coba lagi nanti')
-      }
+    if (email === 'admin@admin.com' && password === 'admin#1234') {
+      localStorage.setItem('isAuthenticated', 'true');
+      navigate('/dashboard'); // Redirect ke dashboard setelah login
+    } else {
+      alert('Login failed!');
     }
+
+    // try {
+    //   const response = await axios.post(
+    //     `${config.apiEndpoint}/login`,
+    //     {
+    //       Email: email,
+    //       Password: password
+    //     },
+    //     {
+    //       headers : {
+    //         "Content-Type": 'application/json'
+    //       }
+    //     }
+    //   );
+
+    //   if (response.status === 200) {
+    //     localStorage.setItem('isAuthenticated','true');
+    //     navigate('/dashboard');
+    //   }
+    // } catch(error) {
+    //   if (error.response && error.response.status === 400){
+    //     setError('Login gagal. Cek email dan password');
+    //   } else {
+    //     setError('Terjadi kesalahan, coba lagi nanti')
+    //   }
+    // }
   };
 
   return (
