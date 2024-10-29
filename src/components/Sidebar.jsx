@@ -7,13 +7,13 @@ function Sidebar() {
       <h4 className="text-center">Kominfo</h4>
       <ul className="nav flex-column">
         <li className="nav-item mb-2">
-          <Link to="/dashboard" className="nav-link text-white">Dashboard</Link>
+          <Link to="/admin/dashboard" className="nav-link text-white">Dashboard</Link>
         </li>
         <li className="nav-item mb-2">
-          <Link to="/profile" className="nav-link text-white">Profile</Link>
+          <Link to="/admin/profile" className="nav-link text-white">Profile</Link>
         </li>
         <li className="nav-item mb-2">
-          <Link to="/settings" className="nav-link text-white">Settings</Link>
+          <Link to="/admin/settings" className="nav-link text-white">Settings</Link>
         </li>
       </ul>
     </div>

@@ -14,14 +14,14 @@ function App() {
     <Router>
       <Routes>
         {/* Route untuk login */}
-        <Route path="/login" element={<Login />} />
+        <Route path="/admin/login" element={<Login />} />
 
         {/* Redirect dari root ke dashboard jika sudah login */}
-        <Route path="/" element={<Navigate to="/dashboard" />} />
+        <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
 
         {/* Protected routes */}
         <Route 
-          path="/dashboard" 
+          path="/admin/dashboard" 
           element={
             <ProtectedRoute>
               <DashboardLayout>
@@ -31,7 +31,7 @@ function App() {
           } 
         />
         <Route 
-          path="/profile" 
+          path="/admin/profile" 
           element={
             <ProtectedRoute>
               <DashboardLayout>
@@ -41,7 +41,7 @@ function App() {
           } 
         />
         <Route 
-          path="/settings" 
+          path="/admin/settings" 
           element={
             <ProtectedRoute>
               <DashboardLayout>
@@ -51,7 +51,7 @@ function App() {
           } 
         />
         <Route
-          path='/dashboard/:title'
+          path='/admin/dashboard/:title'
           element={
             <ProtectedRoute>
               <DashboardLayout>
@@ -60,7 +60,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="*" element={<Navigate to="/dashboard" />} />
+        <Route path="*" element={<Navigate to="/admin/dashboard" />} />
       </Routes>
     </Router>
   );

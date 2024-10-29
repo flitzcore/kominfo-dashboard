@@ -19,10 +19,21 @@ const SopPage = () => {
   const fetchSopData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`${config.apiEndpoint}/data/${title}/body`); // API endpoint dengan title
-      setData(response.data);
+      const response = await axios.get(`${config.apiEndpoint}/data`); // API endpoint dengan title
+      const result = response.data
+
+      const titleToFind = decodeURIComponent(title); // Ganti dengan Title yang ingin dicari
+      const filteredData = result.data
+        .filter(item => item.Title === titleToFind);
+
+      console.log("data nya")
+      console.log(filteredData[0]['Body'])
+
+      setData(filteredData[0]['Body']); // Simpan data yang sudah difilter langsung ke state
       setLoading(false);
     } catch (error) {
+      
+
       setError('Error fetching data');
       setLoading(false);
     }
@@ -102,7 +113,7 @@ const SopPage = () => {
     console.log(currentAddInputValue)
 
     try{
-      const url = `${config.apiEndpoint}/add/${title}/body`
+      const url = `${config.apiEndpoint}/data/${title}/body`
 
       await axios.post(url, {
         Body: currentAddInputValue

@@ -9,14 +9,14 @@ const Navbar = () => {
     // Hapus status autentikasi dari localStorage
     localStorage.removeItem('isAuthenticated');
     // Arahkan ke halaman login
-    navigate('/login');
+    navigate('/admin/login');
   };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light w-100" >
       <div className="container-fluid">
         {/* Brand atau judul di sebelah kiri */}
-        <a className="navbar-brand" href="/">Dashboard</a>
+        <a className="navbar-brand" href="/admin">Dashboard</a>
         
         {/* Tombol toggle untuk mobile view */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

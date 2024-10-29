@@ -15,7 +15,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${config.apiEndpoint}/add`);
+        const response = await axios.get(`${config.apiEndpoint}/data`);
         const result = response.data; // Axios sudah otomatis parsing JSON
         setData(result.data); // Menyimpan data dari response
         setLoading(false);
@@ -52,7 +52,7 @@ function Dashboard() {
 
   const handleEdit = (id)  => {
     console.log(`berjalan ke halaman ${id}`);
-    navigate(`/dashboard/${encodeURIComponent(id)}`)
+    navigate(`/admin/dashboard/${encodeURIComponent(id)}`)
     
   }
 
@@ -68,14 +68,14 @@ function Dashboard() {
     console.log(addInputValue)
 
     try {
-      const url = `${config.apiEndpoint}/add`;
+      const url = `${config.apiEndpoint}/data`;
       
       await axios.post(url, {
         Title: addInputValue
       });
 
       console.log('Data berhasil ditambahkan');
-      navigate(`/dashboard/${encodeURIComponent(addInputValue)}`)
+      navigate(`/admin/dashboard/${encodeURIComponent(addInputValue)}`)
       setShowModalAdd(false);
 
     } catch(error) {
